@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .paginations {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  form button {
+    margin-left: -5px;
+  }
+  form {
+    float: right;
+    font-size: 18px;
+  }
+  form > * {
+    padding: 5px;
+  }
+  .ased {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5vh;
+  }
+  .ased > * {
+    margin-left: 5px;
+  }
+  #table-content {
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    width: 100vw;
+  }
+  th,
+  td {
+    border: 3px solid;
+    padding: 10px;
+  }
+  #heading,
+  .ased {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-body {
+    display: grid;
+  }
+  
+  td > * {
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+  }
