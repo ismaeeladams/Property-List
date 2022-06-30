@@ -70,7 +70,7 @@
               </div>
               <div class="modal-body">
                 <label for="title">Title:</label>
-                <input type="text" name="title" placeholder="Title">
+                <input type="text" name="title" placeholder="Title" id="T" />
                 <label for="cat">Catergory:</label>
                 <select name="cat" id="cat">
                   <option value="lorem">lorem</option>
@@ -78,14 +78,28 @@
                   <option value="lorem">lorem</option>
                   <option value="lorem">lorem</option>
                 </select>
-                <label for="code">Postal Code:</label>
-                <input type="text" placeholder="Postal Code">
-                <label for="gallery">Gallery:</label>
-                <select name="gallery" id="gallery">
-                  <option value="lorem"></option>
-                  <option value="lorem">YES</option>
-                  <option value="lorem">NO</option>
+                <label for="beds">Bedrooms:</label>
+                <input type="text" name="beds" placeholder="Bedrooms" id="be" />
+                <label for="baths">Bathrooms:</label>
+                <input
+                  type="text"
+                  name="baths"
+                  placeholder="Bathrooms"
+                  id="ba"
+                />
+                <label for="loc">Location:</label>
+                <select name="loc" id="loc">
+                  <option value="lorem">lorem</option>
+                  <option value="lorem">lorem</option>
+                  <option value="lorem">lorem</option>
+                  <option value="lorem">lorem</option>
                 </select>
+                <label for="park">Parking:</label>
+                <input type="text" name="park" placeholder="Parking" id="pa" />
+                <label for="price">Price</label>
+                <input type="text" name="price" placeholder="Price" id="pr" />
+                <label for="size">Size:</label>
+                <input type="text" name="size" placeholder="Size" id="s" />
               </div>
               <div class="modal-footer">
                 <button
@@ -95,7 +109,7 @@
                 >
                   Close
                 </button>
-                <button type="button" class="btn btn-primary">
+                <button type="submit" onclick=" add()" class="btn btn-primary">
                   Understood
                 </button>
               </div>
@@ -109,91 +123,29 @@
             <th>ID</th>
             <th>TITLE</th>
             <th>CATEGORY</th>
-            <th>POSTAL CODE</th>
-            <th>GALLERY</th>
+            <th>BEDROOMS</th>
+            <th>BATHROOMS</th>
+            <th>LOCATION</th>
+            <th>PARKING</th>
+            <th>PRICE</th>
             <th>............</th>
           </thead>
-          <tbody>
+          <tbody id="tables">
             <tr>
               <td>1</td>
               <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td>stuff</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
+              <td>✔ ⚔️</td>
               <td>3</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
               <td>5</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>Somewhere</td>
-              <td>Something</td>
-              <td>12</td>
-              <td>✔  ⚔️</td>
-              <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></td>
+              <td>mia</td>
+              <td>2</td>
+              <td>R254522</td>
+              <td>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <button onclick="delitem(id)">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -206,8 +158,10 @@
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="./admin.html">1</a></li>
-           
+            <li class="page-item">
+              <a class="page-link" href="./admin.html">1</a>
+            </li>
+            <li class="page-item">
               <a class="page-link" href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>

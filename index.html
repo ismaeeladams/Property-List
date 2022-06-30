@@ -37,87 +37,52 @@
           <li>For Sale</li>
         </ul>
       </form>
+      <!-- search part -->
       <div class="filters">
         <div class="search">
           <p>Property type:</p>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <select name="property-type" id="property-type">
+            <option value="lorem">lorem</option>
+            <option value="Hotel">Hotel</option>
+            <option value="lorem">lorem</option>
+          </select>
         </div>
         <div class="search">
           <p>Location:</p>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <select name="location" id="location">
+             <option value="lorem">lorem</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="lorem">lorem</option>
+          </select>
         </div>
         <div class="search">
           <p>Property size:</p>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <input type="text">
         </div>
         <div class="search">
           <p>Price:</p>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <input type="text">
         </div>
         <form class="from">
           <input type="text" placeholder="Search.." name="search" />
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
+      </div>
+      <div id="propertiess">
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">this is what it is</h5>
+            <p class="card-text">
+              <p>location</p>
+              <p><i class="fa-solid fa-bed"></i> 5 </p> 
+              <p><i class="fa-solid fa-shower"></i> 2</p>    
+              <p><i class="fa-solid fa-car"></i>  1</p>   
+              <p><i class="fa-solid fa-ruler"></i>250000</p>
+              <p>Apartment</p>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <script

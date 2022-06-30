@@ -1,46 +1,46 @@
 .container {
-    height: 100vh;
-  }
-  
-  .img {
-    height: 600px;
-    width: 100%;
-    background-image: url(beach2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .filters {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .lu {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .lu > * {
-    padding: 15px;
-    border: solid 2px;
-    margin-right: 2px;
-  }
-  
-  form button {
-    margin-left: -5px;
-  }
-  
-  .from {
-    float: right;
-    font-size: 18px;
-  }
-  
-  .from > * {
-    padding: 5px;
-  }
-  
-  .filter {
+  height: 100vh;
+}
+
+.img {
+  height: 600px;
+  width: 100%;
+  background-image: url(beach2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.lu > * {
+  padding: 15px;
+  border: solid 2px;
+  margin-right: 2px;
+}
+
+form button {
+  margin-left: -5px;
+}
+
+.from {
+  float: right;
+  font-size: 18px;
+}
+
+.from > * {
+  padding: 5px;
+}
+
+/* .filter {
     display: flex;
     flex-direction: column;
     margin-top: -110px;
@@ -49,4 +49,14 @@
   .panes {
     display: flex;
     justify-content: center;
-  }
+  } */
+
+#propertiess {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 5px 0px 5px 0px;
+}
