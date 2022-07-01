@@ -4,7 +4,7 @@ const items = JSON.parse(localStorage.getItem("items"))
       {
         id: 1,
         title: "Hello",
-        image: "unsplash.com/photos/bjej8BY1JYQ",
+        image: "apartment.jpg",
         product: "Hotel",
         location: "Los Angeles",
         size: "1000 m2",
@@ -118,7 +118,7 @@ items.forEach((property) => {
   console.log(property);
   document.getElementById("propertiess").innerHTML += `
       <div class="card" style="width: 18rem">
-              <img src="..." class="card-img-top" alt="..." />
+              <img src="${property.image}" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">${property.title}</h5>
                 <p class="card-text">
