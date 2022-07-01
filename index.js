@@ -4,6 +4,7 @@ const items = JSON.parse(localStorage.getItem("items"))
       {
         id: 1,
         title: "Hello",
+        image: "unsplash.com/photos/bjej8BY1JYQ",
         product: "Hotel",
         location: "Los Angeles",
         size: "1000 m2",

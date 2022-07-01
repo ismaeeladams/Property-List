@@ -170,9 +170,11 @@ function add() {
   `;
 }
 
+// delete function
 function delitem(id) {
   items = items.filter((item) => item.id !== id);
 
   localStorage.setItem("items", JSON.stringify(items));
   CallItems(items);
 }
+
