@@ -133,6 +133,7 @@ const items = JSON.parse(localStorage.getItem("items"))
       },
     ];
 
+localStorage.setItem("items", JSON.stringify(items))
 items.forEach((property) => {
   console.log(property);
   document.getElementById("propertiess").innerHTML += `

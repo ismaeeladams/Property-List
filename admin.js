@@ -3,6 +3,8 @@ let items = JSON.parse(localStorage.getItem("items"))
   : [
       {
         id: 1,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/hotel.jpg",
         title: "Hello",
         product: "Hotel",
         location: "Los Angeles",
@@ -14,6 +16,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 2,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/apartment.jpg",
         title: "Excal",
         product: "Apartment",
         location: "Las Vegas",
@@ -25,6 +29,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 3,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/hotel2.jpg",
         title: "Popping",
         product: "Hotel",
         location: "Amsterdam",
@@ -36,6 +42,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 4,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/scott-webb-1ddol8rgUH8-unsplash.jpg",
         title: "Axil",
         product: "House",
         location: "Los Angeles",
@@ -47,6 +55,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 5,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/hotel3.jpg",
         title: "HeelLoop",
         product: "Hotel",
         location: "Canada",
@@ -58,6 +68,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 6,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/apartment2.jpg",
         title: "Zeelo",
         product: "Apartment",
         location: "Los Angeles",
@@ -69,6 +81,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 7,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/apartment3.jpg",
         title: "Quell",
         product: "Apartment",
         location: "Washington",
@@ -80,6 +94,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 8,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/will-funfun-bAK9wQghnHI-unsplash.jpg",
         title: "Veowla",
         product: "Hotel",
         location: "Singapore",
@@ -91,6 +107,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 9,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg",
         title: "Deelo",
         product: "House",
         location: "Alabama",
@@ -102,6 +120,8 @@ let items = JSON.parse(localStorage.getItem("items"))
       },
       {
         id: 10,
+        image:
+          "https://raw.githubusercontent.com/ismaeeladams/Property-List/main/Pictures/ralph-ravi-kayden-FqqiAvJejto-unsplash.jpg",
         title: "Resh",
         product: "Hotel",
         location: "Los Angeles",
@@ -179,35 +199,34 @@ function delitem(id) {
 }
 
 // sort function
-const byProduct = items.sort((a, b) =>{
- if (a.product < b.product) return -1;
- return 1;
-})
+const byProduct = items.sort((a, b) => {
+  if (a.product < b.product) return -1;
+  return 1;
+});
 console.log(byProduct);
 
-
-const byBedroom = items.sort((a, b) =>{
+const byBedroom = items.sort((a, b) => {
   return a.bedrooms - b.bedrooms;
-})
+});
 console.log(byBedroom);
 
-const byBathroom = items.sort((a, b) =>{
+const byBathroom = items.sort((a, b) => {
   return a.bathrooms - b.bathrooms;
-})
+});
 console.log(byBathroom);
 
-const byPrice = items.sort((a, b) =>{
+const byPrice = items.sort((a, b) => {
   return a.price - b.price;
-})
+});
 console.log(byPrice);
 
 // edit function
-function editItem(){
+function editItem() {
   document.getElementById("product").value = productID;
   document.getElementById("title").value = productID;
   document.getElementById("size").value = productID;
   document.getElementById("location").value = productID;
   document.getElementById("bathroom").value = product_desc;
   document.getElementById("bedroom").value = qty;
-  document.getElementById("price").value = price; 
+  document.getElementById("price").value = price;
 }
